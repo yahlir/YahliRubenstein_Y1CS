@@ -1,7 +1,7 @@
 # YahliBot
 
 Hello and welcome to YahliBot, with this chatbot, users can engage in a basic conversation, ask for a joke, a fun fact and even ask for the weather in a specific city.
-In this project, I used the random, pyjokes, randfacts and request libraries. In addition, I used the Open Weather API.
+In this project, I used the 'random', 'pyjokes', 'randfacts' and 'requests' libraries. In addition, I used the OpenWeather API.
 
 ## Installation
 
