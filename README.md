@@ -20,4 +20,4 @@ More steps that I think can the level of this chat are:
 1. Increasing the number of scenarios in the 'responses' dictionary in order to make the boat more engaging and capable.
 2. Add more external libraries & APIs, for example: with 'api-football' the bot could give the user information about upcoming matches.
 3. Integrate the bot into a flask ran website, adding a front-end to the bot would make it more user friendly.
-4. Using NLP libraries and other chatbot specific libraries in order to increase the chat bot's capabilities by a lot. A library I thought about using is 'chetterbot'.
+4. Using NLP libraries and other chatbot specific libraries in order to increase the bot's capabilities. A library I thought about using is 'chetterbot'.
