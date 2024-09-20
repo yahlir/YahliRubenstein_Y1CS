@@ -16,7 +16,7 @@ pip install requests
 ## Expandability
 
 In this project, I only scratched the tip of the iceberg regarding the capabilities of a chatbot.
-More steps that I think can the level of this chat are:
+More steps that I think can improve the level of this chatbot are:
 1. Increasing the number of scenarios in the 'responses' dictionary in order to make the boat more engaging and capable.
 2. Add more external libraries & APIs, for example: with 'api-football' the bot could give the user information about upcoming matches.
 3. Integrate the bot into a flask ran website, adding a front-end to the bot would make it more user friendly.
