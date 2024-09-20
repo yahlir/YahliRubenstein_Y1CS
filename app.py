@@ -3,9 +3,8 @@ import pyjokes
 import randfacts
 import requests
 
-OPENWEATHER_API_KEY = '8bf651322efd1ca15c312b9a7d2e1f8e'
+API_KEY = '8bf651322efd1ca15c312b9a7d2e1f8e'
 
-# a dictionary that stores the keywords and different types of responses
 responses = {
     "greeting": {
         "keywords": ["hello", "hi", "hey", "greetings"],
@@ -16,7 +15,7 @@ responses = {
         ]
     },
     "weather": {
-        "keywords": ["weather", "forecast"],
+        "keywords": ["weather"],
         "outputs": [
             "Sure, I can check the weather for you. What city would you like to know about?",
             "I'd be happy to provide a weather update. Which city are you interested in?",
@@ -52,10 +51,9 @@ responses = {
     }
 }
 
-# a funcation that utelizes the OpenWeather api to get the weather by a city name
 def get_weather(city):
 
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
     
     try:
         api_response = requests.get(url)
@@ -66,7 +64,6 @@ def get_weather(city):
     except:
         return f"Sorry, I couldn't fetch the weather information for {city}. Try to ask for weather again."
 
-# function that matches user input with appropriate response
 def find_response(user_input):
     user_input = user_input.lower() 
 
@@ -81,11 +78,14 @@ def find_response(user_input):
             
             else:
                 return random.choice(data["outputs"])
-    
+            
     return "I'm sorry, I don't understand that. Can you try rephrasing or ask for help?"
+
 
 print("YahliBot: Hello! I'm YahliBot, the best chatbot. Type 'bye' to exit or 'help' to see what I can do.")
 weather_query = False
+
+
 while True:
     user_input = input("You: ").strip()
     
